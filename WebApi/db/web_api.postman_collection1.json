@@ -1,0 +1,136 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WebApi",
+		"_postman_id": "08b23845-6f5d-cb42-3c16-dc748c8fb699",   
+		"description": "Angular 13 Crud",
+		"schema":  "https://schema.getpostman.com/json/collection/v2.0.0/collection1.json"
+	},
+	"item": [
+		{
+			"name": "View All Apps",
+			"request": {
+				"url": "http://localhost/WebApi/view.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "View All Apps"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"url": {
+					"raw": "http://localhost/WebApi/delete.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"WebApi",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a App",
+			"request": {
+				"url": "http://localhost/WebApi/create.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "application",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "application description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "",
+							"type": "fichier"
+						},
+						{
+							"key": "download",
+							"value": "url download application",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update App",
+			"request": {
+				"raw": "http://localhost/WebApi/update.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "application",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "application description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "url image application",
+							"description": "",
+							"type": "fichier"
+						},
+						{
+							"key": "download",
+							"value": "url download application",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
